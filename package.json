@@ -1,0 +1,19 @@
+{
+  "name": "botica-sf",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static one-page website for Botica SF, an apothecary cafe at 448 Larkin Street.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.4.0"
+  }
+}

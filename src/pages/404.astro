@@ -1,0 +1,25 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const description = "This page is not part of the Botica SF website.";
+---
+
+<Base
+  title="Page not found — Botica SF"
+  description={description}
+  robots="noindex, follow"
+>
+  <Header />
+  <main id="content">
+    <div class="wrap missing">
+      <img src="/brand/mark-green.svg" width="960" height="960" alt="" />
+      <p class="eyebrow">404</p>
+      <h1>This page does not exist.</h1>
+      <p>The address you tried is not part of the Botica site.</p>
+      <a class="btn btn-solid" href="/">Back to Botica</a>
+    </div>
+  </main>
+  <Footer />
+</Base>

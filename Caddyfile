@@ -1,0 +1,16 @@
+# Replace the site address and the root if you are not using these paths.
+boticasf.com {
+	root * /var/www/botica
+	encode gzip
+	file_server
+
+	handle /subscribe {
+		respond "This signup endpoint is a placeholder. Point it at your mailing list before opening." 501
+	}
+
+	handle_errors {
+		@404 expression {http.error.status_code} == 404
+		rewrite @404 /404.html
+		file_server
+	}
+}

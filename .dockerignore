@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.astro
+docs
+uploads
+brand
+*.md
+Dockerfile
+.dockerignore
+Caddyfile
